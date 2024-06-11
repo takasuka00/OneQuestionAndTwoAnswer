@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.takasuka.forest2">
+
+    <application
+        android:name="com.takasuka.forest2.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_short"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.takasuka.forest2.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.takasuka.forest2.activity.SettingsActivity"
+            android:label="@string/settings_act_title" />
+        <activity
+            android:name="com.takasuka.forest2.activity.EditActivity"
+            android:label="@string/edit_act_title" />
+        <activity android:name="com.takasuka.forest2.activity.TempActivity" />
+        <activity
+            android:name="com.takasuka.forest2.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4258709066265149~1919280276"/>
+
+    </application>
+
+</manifest>
